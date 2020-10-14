@@ -1,0 +1,819 @@
+*{margin: 0;padding: 0; box-sizing: border-box; }
+* img, video{
+  max-width: 100%;
+  height: auto;
+}
+/* img:hover{ 
+  box-shadow: 2px 2px 2px 2px;
+} */
+body{
+  background: rgb(146, 131, 106);
+}
+p{
+font-family:  cursive;
+}
+
+@media screen and (min-width: 1050px) {
+/* le debut du header...........................................................................................................*/
+#nav_burger, #main_accueil_1049{
+  display: none;
+}
+body{
+  /* background: white; */
+}
+#index_1{
+  background: white;
+}
+.box_accueil_chambre, #box_accueil_acces   {
+  flex: 0 0 30%;/*retirer pour le media query 1049*/
+  margin: 10px;
+  border-radius: 20px;
+  border: 2px solid rgb(146, 131, 106);
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: white;
+} 
+#box_accueil_presentation_hotel  {
+  flex: 0 0 97%;/*retirer pour le media query 1049*/
+  margin: 10px;
+  border-radius: 20px;
+  border: 2px solid rgb(146, 131, 106);
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: white;
+}
+
+#box_accueil_presentation_hotel_conteneur, #box_accueil_acces_conteneur{
+  display: flex;
+  flex-wrap: nowrap;
+}
+#box_accueil_avis{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.box_toutes_les_chambres1{
+  /*retirer pour le media query 1049*/
+  margin: 10px;
+  width: 50%;
+  border-radius: 20px;
+  border: 1.5px solid rgb(146, 131, 106);
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: white;
+}
+header{
+  background: rgb(0, 0, 0) ;
+  height: auto;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+ }
+.hautdepage{
+  width: 100%;
+  height: auto;
+}
+.header_bas{
+  display: flex;
+  justify-content: space-around;
+  background: rgb(58, 55, 55); 
+}
+.logo{
+  display: flex;
+  margin: 0 auto;
+}
+#icon_header{
+  margin-top: 5px;
+  word-spacing: 10px;
+  margin-right: 25%;
+  cursor: pointer;
+}
+#adresse_header{
+  font-family: 'Dancing Script', cursive ;
+  color: white;
+  margin-top: 5px;
+}
+#lang_header{
+  font-family: 'Dancing Script', cursive ;
+  margin-top: 5px;
+  font-weight: bold;
+  margin-left: 25%;
+  word-spacing: 20px;
+  cursor: pointer;
+}
+/* ................................................................................................................................. */
+/* debutmenu déroulant .............................................................................................................. */
+.menu_vertical{
+  border: none 1.5px rgb(146, 131, 106);
+  background: rgb(0, 0, 0) ;
+  height: 49px;
+  width: 100%;
+  margin-left: 0px;
+}
+.menu_vertical1, .menu_vertical1 ul{
+  padding-top:0;
+  margin:0;
+  list-style:none;
+  text-align:center;
+}
+.menu_vertical1 li{
+  display:inline-block;
+  position:relative;
+  padding-top:0px;
+  width: 170px;
+}
+.menu_vertical1 ul li{
+  display:inherit;
+  border: solid 0.4px rgb(146, 131, 106) 
+}
+.menu_vertical1 ul li:hover{
+  border: solid 0.4px rgb(146, 131, 106)
+}
+.menu_vertical1 ul li:last-child{
+  border: solid 0.4px rgb(146, 131, 106) 
+}
+.menu_vertical1 ul{
+  position:absolute;
+  z-index: 1000;
+  max-height:0;
+  left: 0;
+  right: 0;
+  overflow:hidden;
+  -moz-transition: .0s all .0s;
+  -webkit-transition: .0s all .0s;
+  transition: .0s all .0s;
+}
+.menu_vertical1 li:hover ul{
+  max-height:25em;
+}
+/* background des liens menus */
+.menu_vertical1 li:first-child{
+  background-color: rgb(0, 0, 0);
+  background-image:-webkit-linear-gradient(top, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  background-image:linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+}
+.menu_vertical1 li:nth-child(2){
+  background-color: rgb(0, 0, 0);
+  background-image:-webkit-linear-gradient(top, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  background-image:linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+}
+.menu_vertical1 li:nth-child(3){
+    background-color: rgb(0, 0, 0);
+    background-image:-webkit-linear-gradient(top, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    background-image:linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+}
+.menu_vertical1 li:last-child{
+  background-color: rgb(0, 0, 0);
+  background-image:-webkit-linear-gradient(top, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  background-image:linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+}
+/* background des liens sous menus */
+.menu_vertical1 li:first-child li{
+  background:rgb(146, 131, 106);
+}
+.menu_vertical1 li:nth-child(2) li{
+  background:rgb(146, 131, 106);
+}
+.menu_vertical1 li:nth-child(3) li{
+    background:rgb(146, 131, 106);
+}
+.menu_vertical1 li:last-child li{
+  background:rgb(146, 131, 106);
+}
+/* background des liens menus et sous menus au survol le hover */
+.menu_vertical1 li:first-child:hover, .menu_vertical1 li:first-child li:hover{
+  background:rgb(146, 131, 106);
+}
+.menu_vertical1 li:nth-child(2):hover, .menu_vertical1 li:nth-child(2) li:hover{
+  background:rgb(146, 131, 106);
+}
+.menu_vertical1 li:nth-child(3):hover, .menu_vertical1 li:nth-child(2) li:hover{
+  background:rgb(146, 131, 106);
+}
+.menu_vertical1 li:last-child:hover, .menu_vertical1 li:last-child li:hover{
+  background:rgb(146, 131, 106);
+}
+/* les a href */
+.menu_vertical1 a{
+  text-decoration:none;
+  display:block;
+  padding:10px 32px;
+  color:#fff;
+  font-family: 'Dancing Script', cursive;
+  font-size: 23px;
+}
+.menu_vertical1 ul a{
+  padding:8px 0;
+}
+.menu_vertical1 li:hover li a{
+  color:#fff;
+  text-transform:inherit;
+}
+.menu_vertical1 li:hover a, .menu_vertical1 li li:hover a{
+  color:rgb(53, 47, 38);
+}
+/* ............................................................................................................................... */
+/* fin de menu déroulant.......................................................................................................... */
+/* fin du header...................................................................................................................*/
+
+/* ............................................................................................................................... */
+/* le debut du footer..............................................................................................................*/
+footer{
+  height: auto;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  /* padding-block-end: 10px; */
+}
+.footer_conteneur{
+  display: flex;
+  justify-content: space-around;
+}
+#footer_recherche{
+  background: rgb(58, 55, 55);
+  text-align: center;
+}
+.button_search{
+  background: rgb(146, 131, 106);
+  color: white;
+}
+#footer_newsletter{
+padding: 80px;
+color: white;
+}
+#footer_adresse{
+  color: white;
+  width: auto;
+  height: auto;
+  padding: 35px;
+  margin-left: 80px;
+}
+#footer_logo{
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+}
+#footer_text{
+width: 140px;
+text-align: center;
+}
+#footer_partage{
+  color: white;
+  text-align: center;
+  padding: 60px;
+  margin-top: 5px;
+  word-spacing: 20px;
+}
+#footer_mention_legal{
+  text-align: center;
+  color: white;
+  /* font-size: auto; */
+  font-family: 'Dancing Script', cursive ;
+  height: 30px;
+}
+#footer_mention_legal a {
+  text-decoration: none;
+  color: rgb(146, 131, 106);
+
+}
+#footer_mention_legal a:hover{
+  color: white;
+}
+/* la fin du footer.................................................................................................................*/
+/* ..................................................................................................................................*/
+}
+@media screen and (max-width: 1049px){
+/* le debut du header...........................................................................................................*/
+#nav_normal, #main_accueil_1050{
+  display: none;
+}
+p{
+  font-family:  cursive;
+  }
+body{
+  background: rgb(146, 131, 106);
+}
+.box_accueil_chambre, #box_accueil_presentation_hotel, #box_accueil_acces, .box_toutes_les_chambres1 {
+   /*retirer pour le media query 1049*/
+  margin: 10px;
+  border-radius: 20px;
+  border: 1.5px solid rgb(146, 131, 106);
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: white;
+} 
+
+#box_accueil_avis, .box_toutes_les_chambres1{
+  display: block;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.box_toutes_les_chambres1{
+  /*retirer pour le media query 1049*/
+  margin: 10px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1.5px solid rgb(146, 131, 106);
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: white;
+}
+/* ................................................................................................................................. */
+/* debut du header ................................................................................................................. */
+header{
+  background: rgb(0, 0, 0) ;
+  height: auto;
+  width: 100%;
+ }
+.hautdepage{
+  width: 100%;
+  height: auto;
+}
+.header_bas{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background: rgb(58, 55, 55); 
+}
+.logo{
+  display: flex;
+  margin: 0 auto;
+  width: 40%;
+  cursor: pointer;
+}
+#icon_header {
+cursor: pointer;
+  margin: 0 auto;
+  margin: 10px auto 10px auto;
+  word-spacing: 15px;
+}
+#icon_header:hover{
+  color: white;
+}
+#adresse_header{
+  font-family: 'Dancing Script', cursive ;
+  color: white;
+  margin-top: 5px;
+  margin: 0 auto;
+}
+#lang_header{
+  font-family: 'Dancing Script', cursive ;
+  margin-top: 5px;
+  font-weight: bold;
+  margin: 0 auto;
+  word-spacing: 50px;
+  cursor: pointer;
+}
+#nav_burger:before
+{
+  /* content: 'Menu'; */
+}
+header ul{
+  text-align: center;
+  /* font-size: auto; */
+  color: white;
+  list-style-type:none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 1s linear;
+  margin: 0 0 0 3px;
+  text-decoration: none;
+}
+header ul li{
+  background-color:rgb(0, 0, 0);
+  border-bottom:solid 0.5px rgb(146, 131, 106);
+  color: white;
+  text-decoration: none;
+  }
+  header ul li a{
+    text-decoration: none;
+  }
+header ul li:hover{
+  background-color:rgb(146, 131, 106);
+  color:rgb(53, 47, 38);
+  cursor:pointer;  
+}
+header:hover ul{
+  visibility: visible;
+  opacity: 1;
+}
+.menu_vertical{
+  border: none 1.5px rgb(146, 131, 106);
+  background: rgb(0, 0, 0) ;
+  height: 0;
+  width: 100%;
+  margin-left: 0px;
+  text-decoration: none;
+}
+/* fin du header menu burger........................................................................................................ */
+/* ................................................................................................................................. */
+
+/* ................................................................................................................................. */
+/* le debut du footer................................................................................................................*/
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  /* padding-block-end: 10px; */
+}
+.footer_conteneur{
+  width: 100%;
+}
+.footer_menu{
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+#footer_recherche{
+  background: rgb(58, 55, 55);
+  text-align: center;
+}
+.button_search{
+  background: rgb(146, 131, 106);
+  color: white;
+}
+#footer_newsletter{
+  padding: 80px;
+  color: white;
+  text-align: center;
+}
+#footer_adresse{
+  color: white;
+  width: auto;
+  height: auto;
+  padding: 35px;
+  margin-left: auto;
+}
+#footer_text{
+  width: auto;
+  text-align: center;
+}
+#footer_partage{
+  color: white;
+  text-align: center;
+  padding: 60px;
+  margin-top: 5px;
+  word-spacing: 20px; 
+}
+#footer_mention_legal{
+  text-align: center;
+  color: white;
+  /* font-size: auto; */
+  font-family: 'Dancing Script', cursive ;
+}
+ #footer_mention_legal a {
+  text-decoration: none;
+  color: rgb(146, 131, 106);
+}
+#footer_mention_legal a:hover{
+  color: white;
+}
+/* la fin du footer.................................................................................................................*/
+/* ................................................................................................................................. */
+}
+
+
+/* contenu de la page de toutes les pages HTML................................................................................... */
+main{
+  border: solid 1px rgb(146, 131, 106);
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* .............................................................................................................................. */
+/* debut du css pour le caroussel DANS LES DEUX MEDIAQUERY....................................................................... */
+/* Slideshow container */
+.slideshow-container {
+  height: 10px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 70%;
+  height: 20%;
+  overflow: hidden;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  top: 10%;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* fin du css pour le caroussel.................................................................................................. */
+/* .............................................................................................................................. */
+
+
+/* .............................................................................................................................. */
+/* debut Contenu des éléments sur le site page d'accueil......................................................................... */
+#text_hotel_accueil {
+  margin: 20px ;
+  border: solid rgb(146, 131, 106);
+  color: rgb(146, 131, 106);
+  border-radius: 20px;
+  text-align: center ;
+  /* font-size: auto; */
+  padding: 10px;
+  line-height: 30px;
+  background: white;
+}
+.box_accueil {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.box_accueil_chambre h4{
+  font-family: 'Dancing Script', cursive ;
+  color: rgb(146, 131, 106) ;
+  text-align: left;
+  padding: 20px;
+  /* font-size: auto; */
+}
+.box_accueil_chambre img {
+  padding: 20px;
+  margin: 0 auto;
+}
+#box_accueil, .box_accueil_text {
+  text-align: left;
+  padding: 0 20px 20px;
+  word-spacing: 1px;
+}
+.box_accueil_acces, .box_accueil_presentation_hotel {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+#box_accueil_acces, #box_accueil_presentation_hotel h4{
+  font-family: 'Dancing Script', cursive ;
+  color: rgb(146, 131, 106) ;
+  text-align: left;
+  padding: 20px;
+  /* font-size: auto; */
+}
+#box_accueil_acces, #box_accueil_presentation_hotel img {
+  padding: 20px;
+  margin: 0 auto;
+}
+#box_accueil_acces, #box_accueil_presentation_hotel, #box_accueil_presentation_hotel_text, #box_accueil_acces_text {
+  text-align: left;
+  padding: 0 20px 20px;
+  word-spacing: 1px;
+}
+.box_accueil_presentation_hotel {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+#box_accueil_presentation_hotel h4{
+  font-family: 'Dancing Script', cursive ;
+  color: rgb(146, 131, 106) ;
+  text-align: left;
+  padding: 20px;
+  /* font-size: auto; */
+}
+#box_accueil_presentation_hotel_conteneur img {
+  padding: 20px;
+}
+#box_accueil_presentation_hotel, #box_accueil_presentation_hotel_text {
+  margin-top: 20px;
+  text-align: left;
+  padding: 0 20px 20px;
+  word-spacing: 1px;
+}
+#video_presentation{
+ margin: 0 auto;
+}
+.box_accueil_acces {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+#box_accueil_acces h4{
+  font-family: 'Dancing Script', cursive ;
+  text-align: left;
+  padding: 20px;
+  /* font-size: auto; */
+}
+#box_accueil_acces_conteneur img {
+  padding: 20px;
+}
+#box_accueil_acces, #box_accueil_acces_text {
+  margin-top: 20px;
+  text-align: left;
+  padding: 0 20px 20px;
+  word-spacing: 1px;
+}
+/* debut du css pour les avis page index.html*/
+.box_accueil_avis{
+  margin: 20px ;
+  border: solid rgb(146, 131, 106);
+  color: rgb(146, 131, 106);
+  border-radius: 20px;
+  text-align: center ;
+  /* font-size: auto; */
+  padding: 10px;
+  line-height: 30px;
+  background: white;
+}
+#box_accueil_avis h4{
+  text-align: left;
+  padding: 20px;
+  /* font-size: auto; */
+}
+#box_accueil_avis_text{
+  width: 90%;
+  padding: 5%;
+  text-align: left;
+}
+/* fin du css pour les avis page index.html*/
+
+/* fin Contenu des éléments sur le site page d'accueil........................................................................... */
+/* .............................................................................................................................. */
+
+/* .............................................................................................................................. */
+/* debut du css pour les bouttons................................................................................................ */
+.button_restaurent{
+  margin: 0 auto;
+  margin-top: 3%;
+  background: rgb(146, 131, 106);
+  padding: 6px 12px;
+  border: solid 1px rgb(146, 131, 106);
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+.button_restaurent:hover{
+  background: white;
+  transition: 0.3s;
+  color: rgb(146, 131, 106);
+  cursor: pointer;
+}
+/* debut du css pour les bouttons................................................................................................ */
+/* .............................................................................................................................. */
+
+
+/* .............................................................................................................................. */
+/* Debut du css pour la page des chambres (toutes les chambres) et les boites des autres pages.....................................*/
+.box_toutes_les_chambres {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.box_toutes_les_chambres1 h4{
+  font-family: 'Dancing Script', cursive ;
+  color: rgb(146, 131, 106) ;
+  text-align: left;
+  padding: 20px;
+  font-size: xx-large; 
+}
+.box_toutes_les_chambres1 h1{
+  font-family: 'Dancing Script', cursive ;
+  color: rgb(146, 131, 106) ;
+  text-align: left;
+  padding: 20px;
+  font-size: xx-large; 
+}
+.box_toutes_les_chambres_conteneur img {
+  padding: 20px;
+  margin: 0 auto;
+}
+.box_toutes_les_chambres, .box_toutes_les_chambres_text {
+  margin-top: 20px;
+  text-align: left;
+  padding: 0 20px 20px;
+  word-spacing: 1px;
+}
+/* fin du css pour la page des chambres (toutes les chambres) et les boites des autres pages.....................................*/
+/* .............................................................................................................................. */
+
+
+/* .............................................................................................................................. */
+/* Debut du css pour la page des chambres (toutes les chambres) et les bites des autres pages.....................................*/
+
+.menu_restaurant{
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive ;
+  text-align:center;
+  color: rgb(0, 0, 0);
+}
+.trait2 {
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: #aa9671;
+  border-width: 0 0 1px 0px;
+  border-radius: 20px;
+  width: 60%;
+  margin-top: 2em;
+  margin: 0 auto;
+}
+.trait {
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: #aa9671;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  width: 60%;
+  margin-top: 2em;
+  margin: 0 auto;
+}
+h3{
+  font-family: 'Dancing Script', cursive;
+}
+/* fin du css pour les pages menu brasserie, degustation, restaurant..............................................................*/
+/* .............................................................................................................................. */
+
+
+/* .............................................................................................................................. */
+/* debut du css pour la page plan du site.........................................................................................*/
+#plan_du_site ul{
+  text-decoration: none;
+  list-style: none;
+  text-decoration: none;
+}
+#plan_du_site li{
+  list-style: none;
+  text-decoration: none;
+}
+/* fin du css pour la page plan du site.........................................................................................*/
+/* .............................................................................................................................. */

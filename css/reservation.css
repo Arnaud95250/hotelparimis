@@ -1,0 +1,364 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+html {
+    color: red;
+}
+*, :before, :after {
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 1050px){
+    #col2 {
+        width: 100%;
+        padding: 10px;
+        padding-top: 10px;
+        background-color: #fffff0;
+        background-image: url(https://www.transparenttextures.com/patterns/dotnoise-light-grey.png);
+    }
+    div {
+        display: block;
+    }
+    #col2 .soustexte {
+        background-color: white;
+        padding: 0.5em;
+        margin-bottom: .5em;
+    }
+    #col2 .texte {
+        background-color: white;
+        border: 1px solid #aa9671;
+        padding: 0.5em;
+        padding-bottom: 1.25em;
+        color: black;
+    }
+    h1, h2 {
+        font-family: Philosopher;
+        font-size: 200%;
+        font-style: italic;
+        font-weight: 400;
+        color: #92836a;
+        margin: 0;
+    }
+    #col2 h3 {
+        text-align: left;
+    }
+    #col2 h3 {
+        font-family: Philosopher;
+        font-size: 200%;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: black;
+        margin: 0;
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+    h3 {
+        font-family: Cinzel Decorative;
+        text-transform: uppercase;
+        font-size: 100%;
+    }
+    p {
+        font-family: Muli;
+        margin: 0;
+        padding-top: 0.5em;
+        padding-left: .5em;
+        font-size: 90%;
+    }
+    form {
+        display: block;
+        margin-top: 0em;
+    }
+    #col2 fieldset {
+        color: #92836a;
+        border: 1px solid #aa9671;
+        border-radius: 10px;
+        font-family: Muli;
+        margin-top: .25em;
+        margin-bottom: 1em;
+    }
+    #col2 fieldset label {
+        display: inline-block;
+        width: 40%;
+        color: black;
+    }
+    #col2 fieldset input, #col2 fieldset textarea, #col2 fieldset select {
+        width: 59%;
+        font-family: Muli;
+    }
+    #col2 form div, #col2 form p {
+        display: flex;
+        flex-wrap: wrap;
+        padding: .25em;
+        color: black;
+    }
+    .divradio p {
+        width: 60%;
+    }
+    fieldset {
+        display: block;
+        margin-inline-start: 2px;
+        margin-inline-end: 2px;
+        padding-block-start: 0.35em;
+        padding-inline-start: 0.75em;
+        padding-inline-end: 0.75em;
+        padding-block-end: 0.625em;
+        min-inline-size: min-content;
+        border-width: 2px;
+        border-style: groove;
+        border-color: threedface;
+        border-image: initial;
+    }
+    fieldset select {
+        width: 60%;
+        font-family: Muli;
+    }
+}
+
+@media screen and (max-width: 1049px){
+    #col2 {
+        width: 100%;
+        padding: 10px;
+        padding-top: 10px;
+        background-color: #fffff0;
+        background-image: url(https://www.transparenttextures.com/patterns/dotnoise-light-grey.png);
+    }
+    div {
+        display: block;
+    }
+    #col2 .soustexte {
+        background-color: white;
+        padding: 0.5em;
+        margin-bottom: .5em;
+    }
+    #col2 .texte {
+        background-color: white;
+        border: 1px solid #aa9671;
+        padding: 0.5em;
+        padding-bottom: 1.25em;
+        color: black;
+    }
+    h1, h2 {
+        font-family: Philosopher;
+        font-size: 200%;
+        font-style: italic;
+        font-weight: 400;
+        color: #92836a;
+        margin: 0;
+    }
+    #col2 h3 {
+        text-align: left;
+    }
+    #col2 h3 {
+        font-family: Philosopher;
+        font-size: 200%;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: black;
+        margin: 0;
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+    h3 {
+        font-family: Cinzel Decorative;
+        text-transform: uppercase;
+        font-size: 100%;
+    }
+    p {
+        font-family: Muli;
+        margin: 0;
+        padding-top: 0.5em;
+        padding-left: .5em;
+        font-size: 90%;
+    }
+    form {
+        display: block;
+        margin-top: 0em;
+    }
+    #col2 fieldset {
+        color: #92836a;
+        border: 1px solid #aa9671;
+        border-radius: 10px;
+        font-family: Muli;
+        margin-top: .25em;
+        margin-bottom: 1em;
+    }
+    #col2 fieldset label {
+        display: inline-block;
+        width: auto;
+        color: black;
+    }
+    #col2 fieldset input, #col2 fieldset textarea, #col2 fieldset select {
+        width: 100%;
+        font-family: Muli;
+    }
+    #col2 form div, #col2 form p {
+        /* display: flex; */
+        flex-wrap: wrap;
+        padding: .25em;
+        color: black;
+    }
+    .divradio p {
+        width: 60%;
+    }
+    fieldset {
+        display: block;
+        margin-inline-start: 2px;
+        margin-inline-end: 2px;
+        padding-block-start: 0.35em;
+        padding-inline-start: 0.75em;
+        padding-inline-end: 0.75em;
+        padding-block-end: 0.625em;
+        min-inline-size: min-content;
+        border-width: 2px;
+        border-style: groove;
+        border-color: threedface;
+        border-image: initial;
+    }
+    fieldset select {
+        width: 60%;
+        font-family: Muli;
+    }
+}
+
+
+
+
+
+.navavis ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.ul2 {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.navavis li {
+    width: 33.33333%;
+    margin-top: 1em;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: center;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border: 1px solid #92836a;
+    list-style-type: none;
+}
+.li2 {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+#col2 .texte {
+    background-color: white;
+    border: 1px solid #aa9671;
+    padding: 0.5em;
+    padding-bottom: 1.25em;
+    color: black;
+}
+element.style {
+}
+#col2 .texte {
+    background-color: white;
+    border: 1px solid #aa9671;
+    padding: 0.5em;
+    padding-bottom: 1.25em;
+    color: black;
+}
+*, :before, :after {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+.spa {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+#col2 h3 {
+    text-align: left;
+}
+#col2 h3 {
+    font-family: Philosopher;
+    font-size: 200%;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: black;
+    margin: 0;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+p {
+    font-family: Muli;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-left: .5em;
+    font-size: 90%;
+}
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+.starcontainer .icone {
+    color: #ffd700;
+}
+.svg-inline--fa.fa-w-18 {
+    width: 1.125em;
+}
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+.texteavis p {
+    font-family: Muli;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-left: .5em;
+    font-size: 90%;
+}
+.texteavis p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#col2 .texte {
+    background-color: white;
+    border: 1px solid #aa9671;
+    padding: 0.5em;
+    padding-bottom: 1.25em;
+    color: black;
+}
+.navavis li a {
+    display: block;
+    text-decoration: none;
+    font-family: Muli;
+    color: #92836a;
+    text-align: center;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+.navavis a:hover {
+    background: #92836a;
+    font-family: Muli;
+    color: white;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+.active, .dot:hover {
+    background-color: #ffffff;
+}
